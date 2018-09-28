@@ -1,0 +1,6 @@
+---
+db:
+  dbPath: "db/"
+  dbFile: "build.sqlite"
+  dbUser:
+  dbPass:
