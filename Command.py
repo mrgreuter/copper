@@ -8,9 +8,22 @@ class Command:
         self.configFile = configFile
         self.dbHandler = dbHandler
 
+    def getCompileScripts(self, pkgId):
+        #self.preConfigureScript =
+        #self.configureScript =
+        #self.postConfigureScript =
+        #self.preMakeScript =
+        #self.makeScript =
+        #self.postMakeScript =
+        #self.preInstallScript =
+        #self.installScript =
+        #self.postInstallScript =
+        return
+
     def readRecipe(self, packageName=None, packageVersion=None):
         self.dbHandler.setupConn(self.dbFile, self.dbPath)
         cur = self.dbHandler.getCursor()
+        #cur.execute("SELECT ? FROM Data where ?=?", (column, goal, constrain,))
         cur.execute('''insert into stocks (name, price) values ("hans", "44.4")''')
         self.dbHandler.getConn().commit()
         self.dbHandler.getConn().close()
