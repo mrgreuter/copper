@@ -4,9 +4,18 @@ from DBHandler import DBHandler
 
 class Command:
 
+    '''TODO
+    setup environment variables
+    setup root dir
+    LOG Stdout/Stderr -> save to db with timestamp
+    '''
+
     def __init__(self, configFile, dbHandler):
         self.configFile = configFile
         self.dbHandler = dbHandler
+
+    def pkgId(self, pkgName, pkgVersion):
+        return
 
     def getCompileScripts(self, pkgId):
         #self.preConfigureScript =

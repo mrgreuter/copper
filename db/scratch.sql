@@ -12,6 +12,8 @@ create table config (
   preinstallscript    text,
   installscript       text,
   postinstallscript   text,
+  downloadUrl         text,
+  fileHash            text,
   dependency          integer,
   foreign key (dependency) references config (pkgid)
 )
